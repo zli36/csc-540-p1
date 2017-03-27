@@ -76,7 +76,7 @@ public class createTables{
 								   " DEPT VARCHAR(10) NOT NULL," +
 								   " TITLE VARCHAR(64) NOT NULL," +
 								   " LEV VARCHAR(13) NOT NULL," +
-								   " GPAREQ NUMERIC(1,2) NOT NULL," +
+								   " GPAREQ NUMERIC(3,2) NOT NULL," +
 								   " CREDIT INTEGER NOT NULL," +
 								   " CONSTRAINT C_CourseID_Should_be_Unique PRIMARY KEY (CID)) ";
 			stmt.executeUpdate(createCourseSql);
@@ -100,7 +100,7 @@ public class createTables{
 								   " FIRSTNAME VARCHAR(15) NOT NULL," +
 								   " LASTNAME VARCHAR(15) NOT NULL," +
 								   " DEPT VARCHAR(20) NOT　NULL," +
-								   " GPA NUMERIC(1,3)," +
+								   " GPA NUMERIC(4,3)," +
 								   " BILL VARCHAR(30)," +
 								   " PASSWORD VARCHAR(20) NOT NULL," +
 								   " EMAIL VARCHAR(20) NOT　NULL," +
@@ -119,13 +119,13 @@ public class createTables{
 
 
 			String createArrangementSql = "CREATE TABLE ARRANGEMENT" + 
-								   "(A_DAY VARCHAR(4) NOT NULL," +
-								   " A_HOUR VARCHAR(2) NOT NULL," +
+								   "(A_DAY VARCHAR(15) NOT NULL," +
+								   " A_HOUR VARCHAR(15) NOT NULL," +
 								   " SEMESTER VARCHAR(10) NOT NULL," +
 								   " A_YEAR VARCHAR(4) NOT　NULL," +
-								   " A_LOCATION VARCHAR(5)," +
+								   " A_LOCATION VARCHAR(15)," +
 								   " SECTION_ID VARCHAR(3) NOT NULL," +
-								   " DEADLINE VARCHAR(8) NOT NULL," +
+								   " DEADLINE VARCHAR(15) NOT NULL," +
 								   " ENROLL_SUM INTEGER NOT　NULL," +
 								   " WAITING_SUM INTEGER NOT　NULL," +
 								   " ENROLL_NOW INTEGER NOT　NULL," +
@@ -146,7 +146,7 @@ public class createTables{
 						" (SEMESTER VARCHAR(10) NOT NULL," +
 						" A_YEAR VARCHAR(4) NOT NULL, " +
 						" CID INTEGER NOT NULL," +
-						" SECTION_ID VARCHAR(4) NOT NULL," +
+						" SECTION_ID VARCHAR(3) NOT NULL," +
 						" PERMIT INTEGER NOT NULL," +
 						" STATUS VARCHAR(10) NOT NULL," +
 						" WL_NUM INTEGER," +
