@@ -127,7 +127,7 @@ public class createTables{
 								   "(A_DAY VARCHAR(15) NOT NULL," +
 								   " A_HOUR VARCHAR(15) NOT NULL," +
 								   " SEMESTER VARCHAR(10) NOT NULL," +
-								   " A_YEAR VARCHAR(4) NOT　NULL," +
+								   " A_YEAR Integer NOT　NULL," +
 								   " A_LOCATION VARCHAR(15)," +
 								   " SECTION_ID VARCHAR(3) NOT NULL," +
 								   " DEADLINE VARCHAR(15) NOT NULL," +
@@ -148,7 +148,7 @@ public class createTables{
 
 			String createEnrollSql = "CREATE TABLE ENROLL" +
 						" (SEMESTER VARCHAR(10) NOT NULL," +
-						" A_YEAR VARCHAR(4) NOT NULL, " +
+						" A_YEAR Integer NOT NULL, " +
 						" CID INTEGER NOT NULL," +
 						" SECTION_ID VARCHAR(4) NOT NULL," +
 						" PERMIT INTEGER NOT NULL," +

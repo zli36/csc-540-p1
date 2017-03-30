@@ -96,33 +96,33 @@ public class insertSampleData{
 			if(set.contains("ARRANGEMENT")) {
 				
 				// Enrollment of 2016fall
-					stmt.executeUpdate("INSERT INTO ARRANGEMENT " + "VALUES ('MON,WED', '8-9', 'FALL', '2016', 'HUNT', '001','2016.4.20',2,2,0,0,'PARNIN',401)");
+					stmt.executeUpdate("INSERT INTO ARRANGEMENT " + "VALUES ('MON,WED', '8-9', 'FALL', 2016, 'HUNT', '001','2016.4.20',2,2,0,0,'PARNIN',401)");
 					System.out.println("INSERT CS401F INTO TABLE ARRANGEMENT");
-					stmt.executeUpdate("INSERT INTO ARRANGEMENT " + "VALUES ('WED,FRI', '8-9', 'FALL', '2016', 'EB1', '001','2016.4.20',5,2,0,0,'HEBER',510)");
+					stmt.executeUpdate("INSERT INTO ARRANGEMENT " + "VALUES ('WED,FRI', '8-9', 'FALL', 2016, 'EB1', '001','2016.4.20',5,2,0,0,'HEBER',510)");
 					System.out.println("INSERT CS510F INTO TABLE ARRANGEMENT");
-					stmt.executeUpdate("INSERT INTO ARRANGEMENT " + "VALUES ('MON,WED', '10-11', 'FALL', '2016', 'EB1', '001','2016.4.20',3,2,0,0,'DAVID',515)");
+					stmt.executeUpdate("INSERT INTO ARRANGEMENT " + "VALUES ('MON,WED', '10-11', 'FALL', 2016, 'EB1', '001','2016.4.20',3,2,0,0,'DAVID',515)");
 					System.out.println("INSERT CS515F INTO TABLE ARRANGEMENT");
-					stmt.executeUpdate("INSERT INTO ARRANGEMENT " + "VALUES ('MON,WED', '10-11', 'FALL', '2016', 'EB2', '001','2016.4.20',2,2,0,0,'DAVIS',520)");
+					stmt.executeUpdate("INSERT INTO ARRANGEMENT " + "VALUES ('MON,WED', '10-11', 'FALL', 2016, 'EB2', '001','2016.4.20',2,2,0,0,'DAVIS',520)");
 					System.out.println("INSERT CS520F INTO TABLE ARRANGEMENT");
-					stmt.executeUpdate("INSERT INTO ARRANGEMENT " + "VALUES ('TUE,THU', '13-14', 'FALL', '2016', 'EB3', '001','2016.4.20',2,0,0,0,'ROSE',525)");
+					stmt.executeUpdate("INSERT INTO ARRANGEMENT " + "VALUES ('TUE,THU', '13-14', 'FALL', 2016, 'EB3', '001','2016.4.20',2,0,0,0,'ROSE',525)");
 					System.out.println("INSERT CS525F INTO TABLE ARRANGEMENT");
-					stmt.executeUpdate("INSERT INTO ARRANGEMENT " + "VALUES ('TUE,THU', '16-17', 'FALL', '2016', 'EB2', '001','2016.4.20',4,2,0,0,'WESTBROOK',420)");
+					stmt.executeUpdate("INSERT INTO ARRANGEMENT " + "VALUES ('TUE,THU', '16-17', 'FALL', 2016, 'EB2', '001','2016.4.20',4,2,0,0,'WESTBROOK',420)");
 					System.out.println("INSERT CE420F INTO TABLE ARRANGEMENT");
 					
 					//Enrollment of 2017Spring
-					stmt.executeUpdate("INSERT INTO ARRANGEMENT " + "VALUES ('MON,WED', '8-9', 'SPRING', '2017', 'HUNT', '001','2016.12.20',2,2,0,0,'PARNIN',402)");
+					stmt.executeUpdate("INSERT INTO ARRANGEMENT " + "VALUES ('MON,WED', '8-9', 'SPRING', 2017, 'HUNT', '001','2016.12.20',2,2,0,0,'PARNIN',402)");
 					System.out.println("INSERT CS402S INTO TABLE ARRANGEMENT");
-					stmt.executeUpdate("INSERT INTO ARRANGEMENT " + "VALUES ('MON,WED', '8-9', 'SPRING', '2017', 'EB1', '001','2016.12.20',5,2,0,0,'HEBER',510)");
+					stmt.executeUpdate("INSERT INTO ARRANGEMENT " + "VALUES ('MON,WED', '8-9', 'SPRING', 2017, 'EB1', '001','2016.12.20',5,2,0,0,'HEBER',510)");
 					System.out.println("INSERT CS510S INTO TABLE ARRANGEMENT");
-					stmt.executeUpdate("INSERT INTO ARRANGEMENT " + "VALUES ('WED,FRI', '18-19', 'SPRING', '2017', 'HUNT', '001','2016.12.20',2,2,0,0,'PARNIN',505)");
+					stmt.executeUpdate("INSERT INTO ARRANGEMENT " + "VALUES ('WED,FRI', '18-19', 'SPRING', 2017, 'HUNT', '001','2016.12.20',2,2,0,0,'PARNIN',505)");
 					System.out.println("INSERT CS505S INTO TABLE ARRANGEMENT");
-					stmt.executeUpdate("INSERT INTO ARRANGEMENT " + "VALUES ('WED,FRI', '13-14', 'SPRING', '2017', 'EB2', '001','2016.12.20',3,2,0,0,'MIKE',521)");
+					stmt.executeUpdate("INSERT INTO ARRANGEMENT " + "VALUES ('WED,FRI', '13-14', 'SPRING', 2017, 'EB2', '001','2016.12.20',3,2,0,0,'MIKE',521)");
 					System.out.println("INSERT CS521S INTO TABLE ARRANGEMENT");
-					stmt.executeUpdate("INSERT INTO ARRANGEMENT " + "VALUES ('WED,FRI', '10-11', 'SPRING', '2017', 'HUNT', '001','2016.12.20',2,0,0,0,'JEFF',525)");
+					stmt.executeUpdate("INSERT INTO ARRANGEMENT " + "VALUES ('WED,FRI', '10-11', 'SPRING', 2017, 'HUNT', '001','2016.12.20',2,0,0,0,'JEFF',525)");
 					System.out.println("INSERT CS525S INTO TABLE ARRANGEMENT");
-					stmt.executeUpdate("INSERT INTO ARRANGEMENT " + "VALUES ('WED,FRI', '15-16', 'SPRING', '2017', 'HUNT', '001','2016.12.20',2,2,0,0,'GREEN',530)");
+					stmt.executeUpdate("INSERT INTO ARRANGEMENT " + "VALUES ('WED,FRI', '15-16', 'SPRING', 2017, 'HUNT', '001','2016.12.20',2,2,0,0,'GREEN',530)");
 					System.out.println("INSERT CS530S INTO TABLE ARRANGEMENT");
-					stmt.executeUpdate("INSERT INTO ARRANGEMENT " + "VALUES ('WED,FRI', '20-21', 'SPRING', '2017', 'HUNT', '001','2016.12.20',2,2,0,0,'PARNIN',421)");
+					stmt.executeUpdate("INSERT INTO ARRANGEMENT " + "VALUES ('WED,FRI', '20-21', 'SPRING', 2017, 'HUNT', '001','2016.12.20',2,2,0,0,'PARNIN',421)");
 					System.out.println("INSERT ECE421S INTO TABLE ARRANGEMENT");
 					
 					
@@ -132,23 +132,23 @@ public class insertSampleData{
 			//insert into table ENROLL
 
 			if(set.contains("ENROLL")) {
-					stmt.executeUpdate("INSERT INTO ENROLL " + "VALUES ('FALL', '2016', '420', '001', 1, 'ENROLLED',0,101,3,'F')");
+					stmt.executeUpdate("INSERT INTO ENROLL " + "VALUES ('FALL', 2016, '420', '001', 1, 'ENROLLED',0,101,3,'F')");
 					System.out.println("INSERT ENROLLMENT RECORDS OF 2016 FALL 420 SECTION 001 FOR STUDENT 101  INTO TABLE ENROLL");
-					stmt.executeUpdate("INSERT INTO ENROLL " + "VALUES ('FALL', '2016', '510', '001', 1, 'ENROLLED',0,102,3,'F')");
+					stmt.executeUpdate("INSERT INTO ENROLL " + "VALUES ('FALL', 2016, '510', '001', 1, 'ENROLLED',0,102,3,'F')");
 					System.out.println("INSERT ENROLLMENT RECORDS OF 2016 FALL 510 SECTION 001 FOR STUDENT 102  INTO TABLE ENROLL");
-					stmt.executeUpdate("INSERT INTO ENROLL " + "VALUES ('FALL', '2016', '515', '001', 1, 'ENROLLED',0,102,3,'F')");
+					stmt.executeUpdate("INSERT INTO ENROLL " + "VALUES ('FALL', 2016, '515', '001', 1, 'ENROLLED',0,102,3,'F')");
 					System.out.println("INSERT ENROLLMENT RECORDS OF 2016 FALL 515 SECTION 001 FOR STUDENT 102  INTO TABLE ENROLL");
-					stmt.executeUpdate("INSERT INTO ENROLL " + "VALUES ('FALL', '2016', '515', '001', 1, 'ENROLLED',0,103,3,'F')");
+					stmt.executeUpdate("INSERT INTO ENROLL " + "VALUES ('FALL', 2016, '515', '001', 1, 'ENROLLED',0,103,3,'F')");
 					System.out.println("INSERT ENROLLMENT RECORDS OF 2016 FALL 515 SECTION 001 FOR STUDENT 103  INTO TABLE ENROLL");
-					stmt.executeUpdate("INSERT INTO ENROLL " + "VALUES ('FALL', '2016', '520', '001', 1, 'ENROLLED',0,103,3,'F')");
+					stmt.executeUpdate("INSERT INTO ENROLL " + "VALUES ('FALL', 2016, '520', '001', 1, 'ENROLLED',0,103,3,'F')");
 					System.out.println("INSERT ENROLLMENT RECORDS OF 2016 FALL 520 SECTION 001 FOR STUDENT 103  INTO TABLE ENROLL");
-					stmt.executeUpdate("INSERT INTO ENROLL " + "VALUES ('FALL', '2016', '510', '001', 1, 'ENROLLED',0,103,3,'F')");
+					stmt.executeUpdate("INSERT INTO ENROLL " + "VALUES ('FALL', 2016, '510', '001', 1, 'ENROLLED',0,103,3,'F')");
 					System.out.println("INSERT ENROLLMENT RECORDS OF 2016 FALL 510 SECTION 001 FOR STUDENT 103  INTO TABLE ENROLL");
-					stmt.executeUpdate("INSERT INTO ENROLL " + "VALUES ('FALL', '2016', '510', '001', 1, 'ENROLLED',0,104,3,'F')");
+					stmt.executeUpdate("INSERT INTO ENROLL " + "VALUES ('FALL', 2016, '510', '001', 1, 'ENROLLED',0,104,3,'F')");
 					System.out.println("INSERT ENROLLMENT RECORDS OF 2016 FALL 510 SECTION 001 FOR STUDENT 104  INTO TABLE ENROLL");
-					stmt.executeUpdate("INSERT INTO ENROLL " + "VALUES ('FALL', '2016', '515', '001', 1, 'ENROLLED',0,104,3,'F')");
+					stmt.executeUpdate("INSERT INTO ENROLL " + "VALUES ('FALL', 2016, '515', '001', 1, 'ENROLLED',0,104,3,'F')");
 					System.out.println("INSERT ENROLLMENT RECORDS OF 2016 FALL 515 SECTION 001 FOR STUDENT 104  INTO TABLE ENROLL");
-					stmt.executeUpdate("INSERT INTO ENROLL " + "VALUES ('FALL', '2016', '525', '001', 1, 'ENROLLED',0,104,3,'F')");
+					stmt.executeUpdate("INSERT INTO ENROLL " + "VALUES ('FALL', 2016, '525', '001', 1, 'ENROLLED',0,104,3,'F')");
 					System.out.println("INSERT ENROLLMENT RECORDS OF 2016 FALL 525 SECTION 001 FOR STUDENT 104  INTO TABLE ENROLL");
 					
 				}
