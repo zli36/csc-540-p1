@@ -96,33 +96,33 @@ public class insertSampleData{
 			if(set.contains("ARRANGEMENT")) {
 				
 				// Enrollment of 2016fall
-					stmt.executeUpdate("INSERT INTO ARRANGEMENT " + "VALUES ('MON,WED', '8-9', 'FALL', 2016, 'HUNT', '001','2016.4.20',2,2,0,0,'PARNIN',401)");
+					stmt.executeUpdate("INSERT INTO ARRANGEMENT " + "VALUES ('MON,WED', '12:00-13:00', 'FALL', 2016, 'HUNT', '001','2016.4.20',2,2,0,0,'PARNIN',401)");
 					System.out.println("INSERT CS401F INTO TABLE ARRANGEMENT");
-					stmt.executeUpdate("INSERT INTO ARRANGEMENT " + "VALUES ('WED,FRI', '8-9', 'FALL', 2016, 'EB1', '001','2016.4.20',5,2,0,0,'HEBER',510)");
+					stmt.executeUpdate("INSERT INTO ARRANGEMENT " + "VALUES ('TUE,THU', '13:00-14:00', 'FALL', 2016, 'EB1', '001','2016.4.20',5,2,0,0,'HEBER',510)");
 					System.out.println("INSERT CS510F INTO TABLE ARRANGEMENT");
-					stmt.executeUpdate("INSERT INTO ARRANGEMENT " + "VALUES ('MON,WED', '10-11', 'FALL', 2016, 'EB1', '001','2016.4.20',3,2,0,0,'DAVID',515)");
+					stmt.executeUpdate("INSERT INTO ARRANGEMENT " + "VALUES ('TUE,THU', '14:00-15:00', 'FALL', 2016, 'EB1', '001','2016.4.20',3,2,0,0,'DAVID',515)");
 					System.out.println("INSERT CS515F INTO TABLE ARRANGEMENT");
-					stmt.executeUpdate("INSERT INTO ARRANGEMENT " + "VALUES ('MON,WED', '10-11', 'FALL', 2016, 'EB2', '001','2016.4.20',2,2,0,0,'DAVIS',520)");
+					stmt.executeUpdate("INSERT INTO ARRANGEMENT " + "VALUES ('MON,WED', '11:00-12:00', 'FALL', 2016, 'EB2', '001','2016.4.20',2,2,0,0,'DAVIS',520)");
 					System.out.println("INSERT CS520F INTO TABLE ARRANGEMENT");
-					stmt.executeUpdate("INSERT INTO ARRANGEMENT " + "VALUES ('TUE,THU', '13-14', 'FALL', 2016, 'EB3', '001','2016.4.20',2,0,0,0,'ROSE',525)");
+					stmt.executeUpdate("INSERT INTO ARRANGEMENT " + "VALUES ('MON,WED', '15:00-16:00', 'FALL', 2016, 'EB3', '001','2016.4.20',2,0,0,0,'ROSE',525)");
 					System.out.println("INSERT CS525F INTO TABLE ARRANGEMENT");
-					stmt.executeUpdate("INSERT INTO ARRANGEMENT " + "VALUES ('TUE,THU', '16-17', 'FALL', 2016, 'EB2', '001','2016.4.20',4,2,0,0,'WESTBROOK',420)");
+					stmt.executeUpdate("INSERT INTO ARRANGEMENT " + "VALUES ('FRI', '15:00-17:00', 'FALL', 2016, 'EB2', '001','2016.4.20',4,2,0,0,'WESTBROOK',420)");
 					System.out.println("INSERT CE420F INTO TABLE ARRANGEMENT");
 					
 					//Enrollment of 2017Spring
-					stmt.executeUpdate("INSERT INTO ARRANGEMENT " + "VALUES ('MON,WED', '8-9', 'SPRING', 2017, 'HUNT', '001','2016.12.20',2,2,0,0,'PARNIN',402)");
+					stmt.executeUpdate("INSERT INTO ARRANGEMENT " + "VALUES ('MON,WED', '11:00-12:00', 'SPRING', 2017, 'HUNT', '001','2016.12.20',2,2,0,0,'PARNIN',402)");
 					System.out.println("INSERT CS402S INTO TABLE ARRANGEMENT");
-					stmt.executeUpdate("INSERT INTO ARRANGEMENT " + "VALUES ('MON,WED', '8-9', 'SPRING', 2017, 'EB1', '001','2016.12.20',5,2,0,0,'HEBER',510)");
+					stmt.executeUpdate("INSERT INTO ARRANGEMENT " + "VALUES ('TUE,THU', '13:00-14:00', 'SPRING', 2017, 'EB1', '001','2016.12.20',5,2,0,0,'HEBER',510)");
 					System.out.println("INSERT CS510S INTO TABLE ARRANGEMENT");
-					stmt.executeUpdate("INSERT INTO ARRANGEMENT " + "VALUES ('WED,FRI', '18-19', 'SPRING', 2017, 'HUNT', '001','2016.12.20',2,2,0,0,'PARNIN',505)");
+					stmt.executeUpdate("INSERT INTO ARRANGEMENT " + "VALUES ('MON,WED', '11:00-12:00', 'SPRING', 2017, 'HUNT', '001','2016.12.20',2,2,0,0,'PARNIN',505)");
 					System.out.println("INSERT CS505S INTO TABLE ARRANGEMENT");
-					stmt.executeUpdate("INSERT INTO ARRANGEMENT " + "VALUES ('WED,FRI', '13-14', 'SPRING', 2017, 'EB2', '001','2016.12.20',3,2,0,0,'MIKE',521)");
+					stmt.executeUpdate("INSERT INTO ARRANGEMENT " + "VALUES ('TUE,THU', '13:00-14:00', 'SPRING', 2017, 'EB2', '001','2016.12.20',3,2,0,0,'MIKE',521)");
 					System.out.println("INSERT CS521S INTO TABLE ARRANGEMENT");
-					stmt.executeUpdate("INSERT INTO ARRANGEMENT " + "VALUES ('WED,FRI', '10-11', 'SPRING', 2017, 'HUNT', '001','2016.12.20',2,0,0,0,'JEFF',525)");
+					stmt.executeUpdate("INSERT INTO ARRANGEMENT " + "VALUES ('MON,WED', '14:00-15:00', 'SPRING', 2017, 'HUNT', '001','2016.12.20',2,0,0,0,'JEFF',525)");
 					System.out.println("INSERT CS525S INTO TABLE ARRANGEMENT");
-					stmt.executeUpdate("INSERT INTO ARRANGEMENT " + "VALUES ('WED,FRI', '15-16', 'SPRING', 2017, 'HUNT', '001','2016.12.20',2,2,0,0,'GREEN',530)");
+					stmt.executeUpdate("INSERT INTO ARRANGEMENT " + "VALUES ('MON,WED', '11:00-12:00', 'SPRING', 2017, 'HUNT', '001','2016.12.20',2,2,0,0,'GREEN',530)");
 					System.out.println("INSERT CS530S INTO TABLE ARRANGEMENT");
-					stmt.executeUpdate("INSERT INTO ARRANGEMENT " + "VALUES ('WED,FRI', '20-21', 'SPRING', 2017, 'HUNT', '001','2016.12.20',2,2,0,0,'PARNIN',421)");
+					stmt.executeUpdate("INSERT INTO ARRANGEMENT " + "VALUES ('TUE,THU', '16:00-17:00', 'SPRING', 2017, 'HUNT', '001','2016.12.20',2,2,0,0,'PARNIN',421)");
 					System.out.println("INSERT ECE421S INTO TABLE ARRANGEMENT");
 					
 					
@@ -152,7 +152,61 @@ public class insertSampleData{
 					System.out.println("INSERT ENROLLMENT RECORDS OF 2016 FALL 525 SECTION 001 FOR STUDENT 104  INTO TABLE ENROLL");
 					
 				}
-
+			
+			
+			//insert into table COST
+			if(set.contains("COSTC")) {
+				stmt.executeUpdate("INSERT INTO COSTC " + "VALUES ('Graduate','In State', 500)");
+				System.out.println("INSERT COST RECORDS OF Graduate, In State, 500");
+				stmt.executeUpdate("INSERT INTO COSTC " + "VALUES ('Graduate','Out of State', 800)");
+				System.out.println("INSERT COST RECORDS OF Graduate, Out of State, 800");
+				stmt.executeUpdate("INSERT INTO COSTC " + "VALUES ('Graduate','International', 1000)");
+				System.out.println("INSERT COST RECORDS OF Graduate, International, 1000");
+				stmt.executeUpdate("INSERT INTO COSTC " + "VALUES ('Underraduate','In State', 400)");
+				System.out.println("INSERT COST RECORDS OF Undergraduate, In State, 400");
+				stmt.executeUpdate("INSERT INTO COSTC " + "VALUES ('Undergraduate','Out of State', 700)");
+				System.out.println("INSERT COST RECORDS OF Undergraduate, Out of State, 700");
+				stmt.executeUpdate("INSERT INTO COSTC " + "VALUES ('Undergraduate','International', 900)");
+				System.out.println("INSERT COST RECORDS OF Graduate, Intersnational, 900");
+			}
+			
+			if(set.contains("CREDITREQ")) {
+				stmt.executeUpdate("INSERT INTO CREDITREQ " + "VALUES ('Graduate','In State', 0, 9)");
+				System.out.println("INSERT CREDITREQ RECORDS OF Graduate, In State, 0,9");
+				stmt.executeUpdate("INSERT INTO CREDITREQ " + "VALUES ('Graduate','Out of State', 0, 9)");
+				System.out.println("INSERT CREDITREQ RECORDS OF Graduate, Out of State, 0,9");
+				stmt.executeUpdate("INSERT INTO CREDITREQ " + "VALUES ('Graduate','International', 9,9)");
+				System.out.println("INSERT CREDITREQ RECORDS OF Graduate, International, 9,9");
+				stmt.executeUpdate("INSERT INTO CREDITREQ " + "VALUES ('Underraduate','In State', 0,12)");
+				System.out.println("INSERT CREDITREQ RECORDS OF Undergraduate, In State, 0,12");
+				stmt.executeUpdate("INSERT INTO CREDITREQ " + "VALUES ('Undergraduate','Out of State', 0,12)");
+				System.out.println("INSERT CREDITREQ RECORDS OF Undergraduate, Out of State, 0,12");
+				stmt.executeUpdate("INSERT INTO CREDITREQ " + "VALUES ('Undergraduate','International', 0,12)");
+				System.out.println("INSERT CREDITREQ RECORDS OF Graduate, Intersnational, 0,12");
+			}
+			
+			if(set.contains("GRADESYS")) {
+				stmt.executeUpdate("INSERT INTO GRADESYS " + "VALUES ('A+', 4.33)");
+				System.out.println("INSERT GRADESYS RECORDS OF A+, 4.33");
+				stmt.executeUpdate("INSERT INTO GRADESYS " + "VALUES ('A', 4.00)");
+				System.out.println("INSERT GRADESYS RECORDS OF A, 4.00");
+				stmt.executeUpdate("INSERT INTO GRADESYS " + "VALUES ('A-', 3.67)");
+				System.out.println("INSERT GRADESYS RECORDS OF A-, 3.67");
+				stmt.executeUpdate("INSERT INTO GRADESYS " + "VALUES ('B+', 3.33)");
+				System.out.println("INSERT GRADESYS RECORDS OF B+, 3.33");
+				stmt.executeUpdate("INSERT INTO GRADESYS " + "VALUES ('B', 3.00)");
+				System.out.println("INSERT GRADESYS RECORDS OF B, 3.00");
+				stmt.executeUpdate("INSERT INTO GRADESYS " + "VALUES ('B-', 2.67)");
+				System.out.println("INSERT GRADESYS RECORDS OF B-, 2.67");
+				stmt.executeUpdate("INSERT INTO GRADESYS " + "VALUES ('C+', 2.33)");
+				System.out.println("INSERT GRADESYS RECORDS OF C+, 2.33");
+				stmt.executeUpdate("INSERT INTO GRADESYS " + "VALUES ('C', 2.00)");
+				System.out.println("INSERT GRADESYS RECORDS OF C, 2.00");
+				stmt.executeUpdate("INSERT INTO GRADESYS " + "VALUES ('C-', 1.67)");
+				System.out.println("INSERT GRADESYS RECORDS OF C-, 1.67");
+				stmt.executeUpdate("INSERT INTO GRADESYS " + "VALUES ('F', 0.00)");
+				System.out.println("INSERT GRADESYS RECORDS OF F, 0.00");
+			}
 
 			
 

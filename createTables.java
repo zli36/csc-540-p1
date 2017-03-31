@@ -68,6 +68,25 @@ public class createTables{
 					stmt.executeUpdate("DROP TABLE COURSE");
 					System.out.println("DROP TABLE COURSE");
 				}
+			
+			//drop table cost
+			if(set.contains("COSTC")){
+				stmt.executeUpdate("DROP TABLE COSTC");
+				System.out.println("DROP TABLE COSTC");
+			}
+			
+			//drop table cost
+			if(set.contains("CREDITREQ")){
+				stmt.executeUpdate("DROP TABLE CREDITREQ");
+				System.out.println("DROP TABLE CREDITREQ");
+			}
+			
+			
+			//drop table GRADESYS
+			if(set.contains("GRADESYS")){
+				stmt.executeUpdate("DROP TABLE GRADESYS");
+				System.out.println("DROP TABLE GRADESYS");
+			}
 
 
 			//create table for entity Course
@@ -144,7 +163,7 @@ public class createTables{
 			stmt.executeUpdate(createArrangementSql);
 			System.out.println("Created table ARRANGEMENT in database");
 
-			// String createEnrollSql
+			// CREATE TABLE FOR ENROLL
 
 			String createEnrollSql = "CREATE TABLE ENROLL" +
 						" (SEMESTER VARCHAR(10) NOT NULL," +
@@ -164,6 +183,37 @@ public class createTables{
 
 			stmt.executeUpdate(createEnrollSql);
 			System.out.println("Created table ENROLL in database");
+			
+			
+			//CREATE TABLE FOR COST
+			String createCostSql ="CREATE TABLE COSTC" +
+					" (LEV VARCHAR(15) NOT NULL," +
+					" RESIDENCY VARCHAR(15) NOT NULL," +
+					" COSTPC INTEGER NOT NULL," +
+					" PRIMARY KEY (RESIDENCY,LEV) )";
+			stmt.executeUpdate(createCostSql);
+			System.out.println("Created table COSTC in database");
+			
+			
+			//CREATE TABLE FOR CREDITREQ
+			String createCreditSql ="CREATE TABLE CREDITREQ" +
+					" (LEV VARCHAR(15) NOT NULL," +
+					" RESIDENCY VARCHAR(15) NOT NULL," +
+					" MIN_CREDIT INTEGER NOT NULL," +
+					" MAX_CREDIT INTEGER NOT NULL," +
+					" PRIMARY KEY (RESIDENCY,LEV) )";
+			stmt.executeUpdate(createCreditSql);
+			System.out.println("Created table CREDITREQ in database");
+			
+			
+			//CREATE TABLE FOR GRADESYS
+			String createGradesysSql ="CREATE TABLE GRADESYS" +
+					" (GRADEC VARCHAR(3) NOT NULL," +
+					" GRADEP NUMERIC(3,2) NOT NULL," +
+					" PRIMARY KEY (GRADEC) )";
+			stmt.executeUpdate(createGradesysSql);
+			System.out.println("Created table GRADESYS in database");
+			
 
 		}catch(SQLException se){
 			se.printStackTrace();
