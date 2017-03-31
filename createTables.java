@@ -75,18 +75,18 @@ public class createTables{
 				System.out.println("DROP TABLE COSTC");
 			}
 			
-			//drop table cost
-			if(set.contains("CREDITREQ")){
-				stmt.executeUpdate("DROP TABLE CREDITREQ");
-				System.out.println("DROP TABLE CREDITREQ");
-			}
+			//drop table CREDITREQ
+						if(set.contains("CREDITREQ")){
+							stmt.executeUpdate("DROP TABLE CREDITREQ");
+							System.out.println("DROP TABLE CREDITREQ");
+						}
 			
 			
 			//drop table GRADESYS
-			if(set.contains("GRADESYS")){
-				stmt.executeUpdate("DROP TABLE GRADESYS");
-				System.out.println("DROP TABLE GRADESYS");
-			}
+						if(set.contains("GRADESYS")){
+							stmt.executeUpdate("DROP TABLE GRADESYS");
+							System.out.println("DROP TABLE GRADESYS");
+						}
 
 
 			//create table for entity Course
@@ -98,7 +98,14 @@ public class createTables{
 								   " GPAREQ NUMERIC(3,2) NOT NULL," +
 								   " PREREQUISITE VARCHAR(15) NOT NULL," +
 								   " CREDIT INTEGER NOT NULL," +
+
+								   " CONSTRAINT C_CourseID_Out_Of_Range CHECK ((CID >= 100) AND (CID < 1000))," +
+								   " CONSTRAINT GPAREQ_Out_Of_Range CHECK ((GPAREQ >= 0) AND (GPAREQ <= 4.30))," +
+								   " CONSTRAINT CREDIT_Out_Of_Range CHECK ((CREDIT >= 0) AND (CREDIT <= 303))," +
 								   " CONSTRAINT C_CourseID_Should_be_Unique PRIMARY KEY (CID)) ";
+
+
+
 			stmt.executeUpdate(createCourseSql);
 			System.out.println("Created table COURSE in database");
 			
@@ -111,7 +118,9 @@ public class createTables{
 								   " PASSWORD VARCHAR(20) NOT NULL," +
 								   " DOB VARCHAR(20) NOT　NULL," +
 								   " USERNAME VARCHAR(20) NOT　NULL," +
-								   " PRIMARY KEY (EID)) ";
+
+
+								   " CONSTRAINT EID_Should_be_Unique PRIMARY KEY (EID)) ";
     	
 		    stmt.executeUpdate(createAdminSql);
 			System.out.println("Created table ADMIN in database");
@@ -135,7 +144,16 @@ public class createTables{
 								   " MAX_CREDIT INTEGER NOT　NULL," +
 								   " NOW_CREDIT INTEGER NOT　NULL," +
 								   " PHONE_NUM INTEGER NOT　NULL," +
-								   " PRIMARY KEY (SID)) ";
+
+
+
+								   " CONSTRAINT SID_Out_Of_Range CHECK (SID >= 0)," +
+								   " CONSTRAINT GPA_Out_Of_Range CHECK ((GPA >= 0.000) AND (GPA <= 4.300))," +
+								   " CONSTRAINT MIN_CREDIT_Out_Of_Range CHECK ((MIN_CREDIT >= 0) AND (MIN_CREDIT <= 100))," +
+								   " CONSTRAINT MAX_CREDIT_Out_Of_Range CHECK ((MAX_CREDIT >= MIN_CREDIT) AND (MAX_CREDIT <= 100))," +
+								   " CONSTRAINT NOW_CREDIT_Out_Of_Range CHECK ((NOW_CREDIT >= 0 ) AND (NOW_CREDIT <= MAX_CREDIT))," +
+
+								   " CONSTRAINT SID_Should_be_Unique PRIMARY KEY (SID)) ";
 
 
 			stmt.executeUpdate(createStudentSql);
@@ -157,6 +175,14 @@ public class createTables{
 								   " FACULTY VARCHAR(20) NOT　NULL," +
 								   " CID INTEGER NOT NULL," +
 								   //" PRIMARY KEY (CID))";
+
+								   " CONSTRAINT YEAR_Out_Of_Range CHECK ((A_YEAR >= 1000) AND (A_YEAR <= 3000))," +
+								   " CONSTRAINT ENROLL_SUM_Out_Of_Range CHECK (ENROLL_SUM >= 0)," +
+								   " CONSTRAINT WAITING_SUM_Out_Of_Range CHECK (WAITING_SUM >= 0)," +
+								   " CONSTRAINT ENROLL_NOW_Out_Of_Range CHECK (WAITING_NOW >= 0)," +
+								   " CONSTRAINT WAITING_NOW_Out_Of_Range CHECK (WAITING_NOW >= 0)," +
+
+
 								   " PRIMARY KEY (CID,SEMESTER,A_YEAR,SECTION_ID)," +
 								   " FOREIGN KEY (CID) REFERENCES COURSE ON DELETE CASCADE)";
 								   
@@ -176,6 +202,16 @@ public class createTables{
 						" SID INTEGER NOT NULL," +
 						" CREDIT INTEGER NOT NULL," +
 						" GRADE VARCHAR(3) ," +
+						
+						//Constraints
+						" CONSTRAINT ENROLL_YEAR_Out_Of_Range CHECK ((A_YEAR >= 1000) AND (A_YEAR <= 3000))," +
+						" CONSTRAINT ENROLL_C_CourseID_Out_Of_Range CHECK ((CID >= 100) AND (CID < 1000))," +
+						" CONSTRAINT ENROLL_PERMIT_Out_Of_Range CHECK ((PERMIT >= 0) AND (PERMIT < 4))," +
+						" CONSTRAINT ENROLL_WL_NUM_Out_Of_Range CHECK ((WL_NUM >= 0) AND (WL_NUM < 200 ))," +
+						" CONSTRAINT ENROLL_SID_Out_Of_Range CHECK (SID >= 0)," +
+						" CONSTRAINT ENROLL_CREDIT_Out_Of_Range CHECK ((CREDIT >= 0) AND (CREDIT <= 303))," +
+						
+						
 						" PRIMARY KEY (SEMESTER, A_YEAR, CID, SECTION_ID, SID)," +
 						" FOREIGN KEY (CID,SEMESTER,A_YEAR,SECTION_ID) REFERENCES ARRANGEMENT ON DELETE CASCADE," +
 						" FOREIGN KEY (SID) REFERENCES STUDENT ON DELETE CASCADE) ";
@@ -205,14 +241,13 @@ public class createTables{
 			stmt.executeUpdate(createCreditSql);
 			System.out.println("Created table CREDITREQ in database");
 			
-			
 			//CREATE TABLE FOR GRADESYS
-			String createGradesysSql ="CREATE TABLE GRADESYS" +
-					" (GRADEC VARCHAR(3) NOT NULL," +
-					" GRADEP NUMERIC(3,2) NOT NULL," +
-					" PRIMARY KEY (GRADEC) )";
-			stmt.executeUpdate(createGradesysSql);
-			System.out.println("Created table GRADESYS in database");
+						String createGradesysSql ="CREATE TABLE GRADESYS" +
+								" (GRADEC VARCHAR(3) NOT NULL," +
+								" GRADEP NUMERIC(3,2) NOT NULL," +
+								" PRIMARY KEY (GRADEC) )";
+						stmt.executeUpdate(createGradesysSql);
+						System.out.println("Created table GRADESYS in database");
 			
 
 		}catch(SQLException se){

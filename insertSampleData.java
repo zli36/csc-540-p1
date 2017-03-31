@@ -77,11 +77,11 @@ public class insertSampleData{
 			if(set.contains("STUDENT")) {
 					stmt.executeUpdate("INSERT INTO STUDENT " + "VALUES (101, 'Harry', 'Potter','1992.6.1', 'ECE', 0.000, '1200','password','HP@ncsu.edu','Under Graduate','IN STATE','420','400','0','12','3',9191111111)");
 					System.out.println("INSERT HARRY POTTER INTO TABLE STUDENT");
-					stmt.executeUpdate("INSERT INTO STUDENT " + "VALUES (102, 'Hermione', 'Granger','1989.4.16', 'CS', 0.000, '0','password','HG@ncsu.edu','Graduate','IN STATE','510,515','500','0','12','6',9192222222)");
+					stmt.executeUpdate("INSERT INTO STUDENT " + "VALUES (102, 'Hermione', 'Granger','1989.4.16', 'CS', 0.000, '0','password','HG@ncsu.edu','Graduate','IN STATE','510,515','500','0','9','6',9192222222)");
 					System.out.println("INSERT HERMIONE GRANGER INTO TABLE STUDENT");
-					stmt.executeUpdate("INSERT INTO STUDENT " + "VALUES (103, 'Ron', 'Weasley','1991.12.19', 'CS', 0.000, '0','password','RW@ncsu.edu','Graduate','OUT OF STATE','515,520,530','800','0','12','9',9193333333)");
+					stmt.executeUpdate("INSERT INTO STUDENT " + "VALUES (103, 'Ron', 'Weasley','1991.12.19', 'CS', 0.000, '0','password','RW@ncsu.edu','Graduate','OUT OF STATE','515,520,530','800','0','9','9',9193333333)");
 					System.out.println("INSERT RON WEASLEY INTO TABLE STUDENT");
-					stmt.executeUpdate("INSERT INTO STUDENT " + "VALUES (104, 'Draco', 'Malfoy','1992.3.21', 'CS', 0.000, '0','password','DM@ncsu.edu','Graduate','INTERNATIONAL','510,515,525','1000','9','12','9',9194444444)");
+					stmt.executeUpdate("INSERT INTO STUDENT " + "VALUES (104, 'Draco', 'Malfoy','1992.3.21', 'CS', 0.000, '0','password','DM@ncsu.edu','Graduate','INTERNATIONAL','510,515,525','1000','9','9','9',9194444444)");
 					System.out.println("INSERT RON WEASLEY INTO TABLE STUDENT");
 					
 				}
